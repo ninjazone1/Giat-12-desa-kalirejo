@@ -6,9 +6,9 @@
   <script>
     // Daftar titik kumpul
     const titikKumpul = [
-      { name: "Titik A", lat: -7.0367721, lng: 110.4219163 },
-      { name: "Titik B", lat: -7.033148, lng: 110.418358 },
-      { name: "Titik C", lat: -7.030251, lng: 110.421051 }
+      { name: "Titik A", lat: -7.0367, lng: 110.4219 },
+      { name: "Titik B", lat: -7.0331, lng: 110.4183 },
+      { name: "Titik C", lat: -7.0302, lng: 110.4210 }
     ];
 
     function getDistance(lat1, lon1, lat2, lon2) {
@@ -47,7 +47,7 @@
             redirectToNearest(position.coords.latitude, position.coords.longitude);
           },
           (error) => {
-            alert("Gagal mengambil lokasi. Pastikan izin lokasi diaktifkan.");
+            alert("Gagal mengambil lokasi. Pastikan hidupkan GPS dan izin lokasi diaktifkan.");
           }
         );
       } else {
